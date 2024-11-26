@@ -1,0 +1,224 @@
+* .Navbar {
+    height: 60px;
+    background-color: rgb(27, 13, 13);
+    display: flex;
+    justify-content: space-between; /* Changed to space-between for more control */
+    align-items: center;
+    padding: 0 20px; /* Added padding for spacing */
+}
+
+.Nav_logo a {
+    color: rgb(189, 61, 189);;
+    font-size: 1.5rem; /* Adjust font size as needed */
+    font-weight: bold; /* Make the logo text bold */
+    text-decoration: none;
+}
+
+.Nav_links a {
+    color: white;
+    margin-right: 1rem; /* Adjust margin for spacing */
+    font-size: 1rem; /* Adjust font size for links */
+    text-decoration: none;
+}
+
+.Nav_links a:hover {
+    text-decoration: underline; /* Add underline on hover for better visibility */
+}
+
+.logo_border {
+    height: 40px;
+    width: 60px;
+    padding-left: 0;
+    color: white;
+}
+
+.logo {
+    height: 40px;
+    width: 60px;
+    background-image: url("logo.png");
+    background-size: cover;
+}
+button{
+    border:2px solid rgb(189, 61, 189);
+    border-radius: 5px;
+    background-color: rgb(189, 61, 189);;
+}
+
+/**panel2**/
+.nav_panel2{
+    height:40px;
+    background-color:rgb(47, 43, 43) ;
+    display: flex;
+    justify-content: space-between; /* Changed to space-between for more control */
+    align-items: center;
+    padding: 0 20px; 
+}
+.panel2_logo {
+    height: 30px;
+    width: 40px;
+    padding-left: 0;
+    color: white;
+    
+}
+
+.heading h1{
+    display: flex;
+    justify-content: space-around; /* Changed to space-between for more control */
+    align-items: center;
+    
+
+}
+.heading h2{
+    display: flex;
+    justify-content: space-around; /* Changed to space-between for more control */
+    align-items: center;
+    color: rgb(213, 27, 213);
+}
+
+/* Main section */
+/* Main section */
+.main_section {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping to handle fewer boxes */
+    justify-content: flex-start; /* Align items to the left */
+    background-color: whitesmoke;
+    padding: 20px; /* Add padding for spacing */
+}
+
+/* Ensure each box fits within the row */
+.box {
+    width: calc(25% - 20px); /* Adjust width to fit 4 boxes per row, subtract margin */
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 2px solid white;
+    background-color: white;
+    box-sizing: border-box; /* Ensure padding and border are included in width/height */
+    margin: 10px; /* Add margin for spacing between boxes */
+    overflow: hidden; /* Ensure content does not overflow */
+}
+
+/* Image styling for each box */
+.inner_box {
+    width: 100%; /* Full width of the box */
+    height: calc(100% - 40px); /* Adjust height to fit within the box */
+}
+
+.img_box1, .img_box2, .img_box3, .img_box4, .img_box5, .img_box6 ,.img_box7{
+    background-size: contain; /* Ensure the image covers the entire box */
+    background-position: center; /* Center the image within the box */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+}
+
+.img_box1 {
+    background-image: url("Images/sem1.png");
+}
+
+.img_box2 {
+    background-image: url("Images/sem2.png");
+}
+
+.img_box3 {
+    background-image: url("Images/sem3.png");
+}
+
+.img_box4 {
+    background-image: url("Images/sem4.png");
+}
+
+.img_box5 {
+    background-image: url("Images/sem5.png");
+}
+
+.img_box6 {
+    background-image: url("Images/sem6.png");
+}
+
+.img_box7{
+    background-image: url("Fun.png");
+}
+.boxName {
+    color: rgb(189, 61, 189);
+    font-weight: bold;
+    padding: 10px; /* Add padding for spacing */
+}
+
+.box a {
+    margin-left: 0.5rem;
+}
+
+
+/* Media Query */
+
+@media (max-width: 1200px) {
+    .box {
+        width: calc(33.333% - 20px); /* 3 boxes per row on medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .box {
+        width: calc(50% - 20px); /* 2 boxes per row on small screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .box {
+        width: calc(100% - 20px); /* 1 box per row on extra-small screens */
+    }
+}
+
+
+/* Footer */
+
+.Info{
+    padding-top: 10px;
+    padding-right:15px;
+    height:8rem;
+    background-color:rgb(47, 43, 43) ;
+    color:white;
+    display: flex;
+    justify-content: space-between;
+}
+li{
+    list-style: none;
+}
+
+.copyright{
+    background-color:rgb(29, 21, 21) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:whitesmoke
+} 
+
+.heading h1 {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    justify-content: center; /* Center the heading text horizontally */
+    font-size: 2.5rem; /* Adjust font size */
+    margin: 0; /* Remove unnecessary margins */
+    gap: 0.5rem; /* Adjust the space between "Welcome to" and animated text */
+    color: rgb(0, 0, 0); /* Color for "Welcome to" text */
+}
+
+#typedText {
+    color: rgb(213, 27, 213);/* Set a distinct color for the animated text */
+    font-weight: bold; /* Make the animated text bold */
+}
+
+.heading h2 {
+    text-align: center; /* Center the subtitle */
+    color: rgb(213, 27, 213); /* Consistent color styling */
+    margin-top: 1rem; /* Add spacing below the main heading */
+}
+
+.heading p {
+    text-align: justify; /* Adjust paragraph alignment */
+    margin: 1rem auto; /* Center and add spacing around the paragraph */
+    max-width: 800px; /* Set a max width for better readability */
+    line-height: 1.6; /* Improve line spacing */
+    color: #333; /* Adjust color for readability */
+}
+

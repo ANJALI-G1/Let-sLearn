@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semester 3</title>
+    <style>
+        /* Reuse styles similar to Semester 1 */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 0;
+        }
+
+        .Navbar {
+            height: 60px;
+            background-color: rgb(27, 13, 13);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        .Nav_logo a {
+            color: rgb(189, 61, 189);
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .Nav_links a {
+            color: white;
+            margin-right: 1rem;
+            font-size: 1rem;
+            text-decoration: none;
+        }
+
+        .Nav_links a:hover {
+            text-decoration: underline;
+        }
+
+        #semester3 {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: rgb(189, 61, 189);
+        }
+
+        .subject {
+            background-color: rgb(247, 247, 247);
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            border: 2px solid rgb(189, 61, 189);
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-start;
+        }
+
+        .subject img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-right: 30px;
+        }
+
+        .subject h2 {
+            color: rgb(189, 61, 189);
+            margin-left: 30px;
+        }
+
+        .content {
+            display: none;
+            padding: 10px;
+            margin-top: 10px;
+            background-color: rgb(239, 239, 239);
+            border-radius: 5px;
+        }
+
+        .subject button {
+            padding: 10px 15px;
+            background-color: rgb(189, 61, 189);
+            color: white;
+            border: 2px solid black;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .subject button:hover {
+            background-color: rgb(157, 55, 157);
+        }
+
+        @media screen and (max-width: 768px) {
+            .subject {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .subject img {
+                width: 120px;
+                height: 120px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div class="Navbar">
+        <div class="Nav_logo">
+            <a href="#">Let's Learn</a>
+        </div>
+        <div class="Nav_links">
+            <a href="Index.html">Home</a>
+            <a href="#">Courses</a>
+            <a href="#">About Us</a>
+        </div>
+    </div>
+
+    <!-- Semester 3 Content -->
+    <div id="semester3">
+        <h1>Semester 3 - Core Subjects</h1>
+        
+        <!-- Data Structures -->
+        <div class="subject" id="ds">
+            <img src="Images/DS.png" alt="Data Structures">
+            <div>
+                <h2>Data Structures</h2>
+                <p>Learn about fundamental data structures such as arrays, linked lists, stacks, queues, trees, and graphs.</p>
+                <button onclick="showContent('ds')">See Details</button>
+                <div id="dsContent" class="content">
+                    <h3>Syllabus:</h3>
+                    <ul>
+                        <li><a href="https://drive.google.com/file/d/148Bcg4X-Z01WOb2djhQM0rp9L2lo5lJO/view?usp=drive_link" target="_blank">Download Syllabus</a></li>
+                    </ul>
+                    <h3>Books:</h3>
+                    <ul>
+                        <li><a href="https://drive.google.com/file/d/1FjJI3iOXCaEHi77TauHzm4T5JbV5g7ks/view?usp=drive_link" target="_blank">Download Books</a></li>
+                        <li><a href="https://docs.google.com/presentation/d/1T1-Rb19pMgBXHzQ-qgePjN9ixIFZ8uYh/edit?usp=drive_link&ouid=115444436408870037809&rtpof=true&sd=true" target="_blank">Download Help Book</a></li>
+                    </ul>
+                    <h3>Past Year Questions:</h3>
+                    <ul>
+                        <li><a href="https://drive.google.com/file/d/1hbZib0u-xJN8U76W4IXCDe-W-WtUNWW_/view?usp=drive_link" target="_blank">Download Past Year Questions</a></li>
+                        <li><a href="https://drive.google.com/file/d/1-VJosQtwlMVfkG00fsRA9JOTYalvNSID/view?usp=drive_link" target="_blank">Download Past Year Questions</a></li>
+                        <li><a href="https://drive.google.com/file/d/1Il9q7pYAz2tJxM24vJd21WXf5xPnVFmU/view?usp=drive_link" target="_blank">Download Past Year Questions</a></li>
+                        <li><a href="https://drive.google.com/file/d/13IdRhXh6fQpE8AeNxCA0ysyDcufb1L4w/view?usp=drive_link" target="_blank">Download Past Year Questions</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Computer Graphics -->
+        <div class="subject" id="cg">
+            <img src="Images/CG.png" alt="Computer Graphics">
+            <div>
+                <h2>Computer Graphics</h2>
+                <p>Understand the basics of computer graphics, including rendering techniques, transformations, and 3D modeling.</p>
+                <button onclick="showContent('cg')">See Details</button>
+                <div id="cgContent" class="content">
+                    <h3>Syllabus:</h3>
+                    <ul>
+                        <li><a href="https://drive.google.com/file/d/15ARH3U0hoOgd6XO8ubAC91bOwVpoSPGD/view?usp=drive_link" target="_blank">Download Syllabus</a></li>
+                    </ul>
+                    <h3>Books:</h3>
+                    <ul>
+                        <li><a href="https://drive.google.com/file/d/1w3Gjxo0sD8X0T087qFm0JbhPOK87ZQtC/view?usp=drive_link" target="_blank">Download Books</a></li>
+                    </ul>
+                    <h3>Past Year Questions:</h3>
+                    <ul>
+                        <li><a href="https://drive.google.com/file/d/1bWIbDxUMOdauvTibWf7Fdkonk_NYnUqr/view?usp=drive_link" target="_blank">Download Past Year Questions</a></li>
+                        <li><a href="https://drive.google.com/file/d/191vr6om0QSd_X17mtaH6lU5R7NnpJSYx/view?usp=drive_link" target="_blank">Download Past Year Questions</a></li>
+                        <li><a href="https://drive.google.com/file/d/1JA3H7OtLQZz0cw-BqBIV5pkpOf8i0YOW/view?usp=drive_link" target="_blank">Download Past Year Questions</a></li>
+                        <li><a href="https://drive.google.com/file/d/1JbdG41sy1D9A3RiE5Ui2qfWIgcXxoKUZ/view?usp=drive_link" target="_blank">Download Past Year Questions</a></li>
+                    </ul>
+                    <h3>Other</h3>
+                    <ul>
+                        <li><a href="https://drive.google.com/file/d/1UpDb6Y4K24WEMR2Vx8e7xLebYyLMiEIl/view?usp=drive_link" target="_blank">Download Important Questions</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Operating Systems -->
+        <div class="subject" id="os">
+            <img src="Images/OS.png" alt="Operating Systems">
+            <div>
+                <h2>Operating Systems</h2>
+                <p>Explore the working of operating systems, including process management, memory management, and file systems.</p>
+                <button onclick="showContent('os')">See Details</button>
+                <div id="osContent" class="content">
+                    <h3>Syllabus:</h3>
+                    <ul>
+                        <li><a href="https://drive.google.com/file/d/1XMUbwyreSPqEsq-3tBxn5x0nF6shJjqO/view?usp=drive_link" target="_blank">Download Syllabus</a></li>
+                    </ul>
+                    <h3>Books:</h3>
+                    <ul>
+                        <li><a href="https://drive.google.com/file/d/1Lw1Wi_-cJhhjkQjQWRvbdQE09aF1PwiG/view?usp=drive_link" target="_blank">Download Books</a></li>
+                    </ul>
+                    <h3>Past Year Questions:</h3>
+                    <ul>
+                        <li><a href="https://drive.google.com/file/d/1KWYOEVXBTxKnQLpvLy7GnflHOeWEl4Q9/view?usp=drive_link" target="_blank">Download Past Year Questions</a></li>
+                        <li><a href="https://drive.google.com/file/d/1CU1EuEUhRJo08rDAKuozDZb6S5Kssct5/view?usp=drive_link" target="_blank">Download Past Year Questions</a></li>
+                    </ul>
+                    <h3>Other Resources:</h3>
+                    <ul>
+                        <li><a href="https://drive.google.com/file/d/16sqLE9FoKaAvqmLT-ApT6qKDUFT_nF-Y/view?usp=drive_link" target="_blank">Download chapter 9</a></li>
+                        <li><a href="https://drive.google.com/file/d/1hyWEodF7GQkRY4bViuiI9kWNYbxdUwcg/view?usp=drive_link" target="_blank">Download Paging </a></li>
+                        <li><a href="https://docs.google.com/presentation/d/1veQUWIy29z2hbJYAXgaVoBN__zTow-Ah/edit?usp=drive_link&ouid=115444436408870037809&rtpof=true&sd=true" target="_blank">Download FS</a></li>
+                        <li><a href="https://docs.google.com/presentation/d/1LBaDknP3eqFSXMZB1pQ55gQFqueNmAQO/edit?usp=drive_link&ouid=115444436408870037809&rtpof=true&sd=true" target="_blank">Download Mass Storage</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function showContent(subject) {
+            var content = document.getElementById(subject + 'Content');
+            if (content.style.display === "block") {
+                content.style.display = "none";
+            } else {
+                content.style.display = "block";
+            }
+        }
+    </script>
+
+</body>
+</html>

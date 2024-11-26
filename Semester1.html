@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semester 1</title>
+    <style>
+        /* General body styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Navbar Styling */
+        .Navbar {
+            height: 60px;
+            background-color: rgb(27, 13, 13); /* Dark background for navbar */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        .Nav_logo a {
+            color: rgb(189, 61, 189);
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .Nav_links a {
+            color: white;
+            margin-right: 1rem;
+            font-size: 1rem;
+            text-decoration: none;
+        }
+
+        .Nav_links a:hover {
+            text-decoration: underline;
+        }
+
+        /* Semester 1 Content */
+        #semester1 {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: rgb(189, 61, 189);
+        }
+
+        /* Subject boxes styling */
+        .subject {
+            background-color: rgb(247, 247, 247);
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            border: 2px solid rgb(189, 61, 189);
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-start;
+        }
+
+        .subject h2 {
+            color: rgb(189, 61, 189);
+            margin-left: 30px;
+        }
+
+        .subject p {
+            color: #555;
+            font-size: 16px;
+            flex: 1;
+        }
+
+        /* Image styling */
+        .subject img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-right: 30px;
+        }
+
+        /* Hidden content styling */
+        .content {
+            display: none;
+            padding: 10px;
+            margin-top: 10px;
+            background-color: rgb(239, 239, 239);
+            border-radius: 5px;
+        }
+
+        /* Button styling */
+        .subject button {
+            padding: 10px 15px;
+            background-color: rgb(189, 61, 189);
+            color: white;
+            border: 2px solid black; /* Black border */
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .subject button:hover {
+            background-color: rgb(157, 55, 157);
+        }
+
+        /* Link styling for "See Details" */
+        .subject a {
+            color: rgb(189, 61, 189);
+            text-decoration: none;
+        }
+
+        .subject a:hover {
+            text-decoration: underline;
+        }
+
+        /* Media Queries for responsiveness */
+        @media screen and (max-width: 768px) {
+            .subject {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .subject img {
+                width: 120px;
+                height: 120px;
+                margin-right: 0;
+                margin-bottom: 15px;
+            }
+
+            .subject h2 {
+                margin-left: 0;
+                text-align: center;
+            }
+
+            .subject p {
+                text-align: center;
+            }
+
+            #semester1 {
+                width: 95%;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .Nav_logo a {
+                font-size: 1rem;
+            }
+
+            .Nav_links a {
+                font-size: 0.8rem;
+            }
+
+            .subject img {
+                width: 100px;
+                height: 100px;
+            }
+
+            .subject h2 {
+                font-size: 1.2rem;
+            }
+
+            .subject p {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div class="Navbar">
+        <div class="Nav_logo">
+            <a href="#">Let's Learn</a>
+        </div>
+        <div class="Nav_links">
+            <a href="Index.html">Home</a>
+            <a href="#">Courses</a>
+            <a href="#">About Us</a>
+        </div>
+    </div>
+
+    <!-- Semester 1 Content -->
+    <div id="semester1">
+        <h1>Semester 1 - Core Subjects</h1>
+        
+        <!-- Mathematics for Computing -->
+        <div class="subject" id="math">
+            <img src="Images/Computing.png" alt="Mathematics for Computing"> <!-- Subject Image -->
+            <div>
+                <h2>Mathematics for Computing</h2>
+                <p>This subject covers the fundamental concepts of mathematics that are essential for computing. The syllabus includes topics like algebra, calculus, and discrete mathematics.</p>
+                <button onclick="showContent('math')">See Details</button>
+                <div id="mathContent" class="content">
+                    <h3>Book:</h3>
+                    <ul>
+                        <li><a href="https://drive.google.com/file/d/1d57Q3iiMDPx5o8jOGwehQ-toQBRPEPfT/view?usp=drive_link" target="_blank">Download Syllabus</a></li>
+                    </ul>
+                    <h3>Syllabus:</h3>
+                    <ul>
+                        <li><a href="https://drive.google.com/file/d/1_FcuJDhUaPo-jJo5yw4pJklaJBEYLncj/view?usp=drive_link" target="_blank">Download Books</a></li>
+                    </ul>
+                    <h3>Past Year Questions:</h3>
+                    <ul>
+                        <li><a href="https://drive.google.com/file/d/1K6xTCT1i9_1tvMCV3yLFwPcknkZsRPJS/view?usp=drive_link" target="_blank">Download Past Year Questions</a></li>
+                    </ul>
+                    <h3>Other Resources</h3>
+                    <ul>
+                        <li><a href="https://drive.google.com/drive/folders/1-lqUEzi38rTdPYI772uKFfuR8xtdHbmk" target="_blank">Practical Material</a></li>
+                    </ul>
+                    
+                </div>
+            </div>
+        </div>
+        
+        <!-- Python Programming -->
+        <div class="subject" id="python">
+            <img src="Images/Python.png" alt="Python Programming"> <!-- Subject Image -->
+            <div>
+                <h2>Programming in Python</h2>
+                <p>This subject teaches the basics of programming using Python. Topics include variables, loops, functions, and object-oriented programming.</p>
+                <button onclick="showContent('python')">See Details</button>
+                <div id="pythonContent" class="content">
+                    <h3>Syllabus:</h3>
+                    <ul>
+                        <li><a href="pdfs/python_syllabus.pdf" target="_blank">Download Syllabus</a></li>
+                    </ul>
+                    <h3>Books:</h3>
+                    <ul>
+                        <li><a href="https://drive.google.com/file/d/1mSLraRmgXkJv6s8P30luZ0oWUuAkrQi3/view?usp=drive_link" target="_blank">Download Books</a></li>
+                    </ul>
+                    <h3>Past Year Questions:</h3>
+                    <ul>
+                        <li><a href="https://drive.google.com/file/d/1r49YzAM_0-GN81ehnbDYK931RWAANJmT/view?usp=drive_link" target="_blank">Download Past Year Questions</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Computer System Architecture -->
+        <div class="subject" id="csa">
+            <img src="Images/CSA.png" alt="Computer System Architecture"> <!-- Subject Image -->
+            <div>
+                <h2>Computer System Architecture</h2>
+                <p>This subject covers the fundamental architecture of computer systems. Topics include CPU, memory, input/output systems, and data representation.</p>
+                <button onclick="showContent('csa')">See Details</button>
+                <div id="csaContent" class="content">
+                    <h3>Syllabus:</h3>
+                    <ul>
+                        <li><a href="https://drive.google.com/file/d/1vPi85E-53oOhANk4WR4ZMgOugGZ0RENr/view?usp=drive_link" target="_blank">Download Syllabus</a></li>
+                    </ul>
+                    <h3>Books:</h3>
+                    <ul>
+                        <li><a href="https://drive.google.com/file/d/16U6qVFWZjBqvoG9tkw3kuJst77TgqQhF/view?usp=drive_link" target="_blank">Download Books</a></li>
+                    </ul>
+                    <h3>Past Year Questions:</h3>
+                    <ul>
+                        <li><a href="https://drive.google.com/file/d/1Tl7DzCcCG3Z2xiq8NzSov8BvIclLkYo2/view?usp=drive_link" target="_blank">Download Past Year Questions</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Function to show or hide content when clicking "See Details"
+        function showContent(subject) {
+            var content = document.getElementById(subject + 'Content');
+            if (content.style.display === "block") {
+                content.style.display = "none";
+            } else {
+                content.style.display = "block";
+            }
+        }
+    </script>
+
+</body>
+</html>

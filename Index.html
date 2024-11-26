@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Let's Learn</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="modal.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="Navbar">
+            <div class="Nav_logo">
+                <a href="#">&lt; / &gt;Let's Learn</a>
+            </div>
+            <div class="Nav_links">
+                <a href="#">Home</a>
+                <a href="#">Course</a>
+                <a href="#">About Us</a>
+            </div>
+        </div>
+
+        <div class="nav_panel2">
+            <div class="panel2_logo">
+                <i class="fa-solid fa-house"></i>
+            </div>
+            <div>
+                <button onclick="openModal('loginModal')">Login</button>
+                <button onclick="openModal('signupModal')">Sign Up</button>
+            </div>
+            
+        </div>
+    </header>
+    <main>
+        <<div class="Intro">
+            <div class="heading">
+                <h1>
+                    Welcome to <span id="typedText"></span>
+                </h1>
+                <h2>!!Have fun and Joy with learning !!</h2>
+                <p>
+                    At Let's Learn, we believe that learning is not just an activity but a joyous journey filled with endless possibilities. 
+                    Our mission is to transform the learning experience into something vibrant, engaging, and full of excitement. 
+                    Here, you will find a treasure trove of resources designed to make your learning adventure both fun and rewarding.
+                </p>
+            </div>
+        </div>
+        <div><h1>Explore Your Courses</h1></div>
+        <div class="main_section">
+            <div class="box">
+                <a class="boxName">First Semester </a>
+                <div class="inner_box img_box1"></div>
+                <a href="Semester1.html">See More</a>
+            </div>
+            <div class="box">
+                <a class="boxName">Second Semester</a>
+                <div class="inner_box img_box2"></div>
+                <a href="Semester2.html">See More</a>
+            </div>
+            <div class="box">
+                <a class="boxName">Third Semester</a>
+                <div class="inner_box img_box3"></div>
+                <a href="Semester3.html">See More</a>
+            </div>
+            <div class="box">
+                <a class="boxName">Fourth Semester</a>
+                <div class="inner_box img_box4"></div>
+                <a href="">See More</a>
+            </div>
+            <div class="box">
+                <a class="boxName">Fifth Semester</a>
+                <div class="inner_box img_box5"></div>
+                <a href="">See More</a>
+            </div>
+
+            <div class="box">
+                <a class="boxName">Sixth Semester</a>
+                <div class="inner_box img_box6"></div>
+                <a href="">See More</a>
+            </div>
+
+            <!-- <div class="box">
+                <a class="boxName">Entertainment And Fun</a>
+                <div class="inner_box img_box7"></div>
+                <a href="">See More</a>
+            </div> -->
+
+        </div>
+        
+
+        </div> 
+    </main>
+
+    <footer>
+        <div class="Info">
+            <div>
+                <ul>
+                    <li>Company</li>
+                    <li>About Us</li>
+                    <li>Contact Us</li>
+                    <li>Privacy Policy</li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li>Company</li>
+                    <li>About Us</li>
+                    <li>Contact Us</li>
+                    <li>Privacy Policy</li>
+                </ul>
+            </div>
+            <div><ul>
+                <li>Company</li>
+                <li>About Us</li>
+                <li>Contact Us</li>
+                <li>Privacy Policy</li>
+            </ul></div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &copy;2024</p>
+        </div>
+    </footer>
+
+    <!-- Login Modal -->
+<div id="loginModal" class="modal">
+    <div class="modal-content">
+        <span class="close-btn" onclick="closeModal('loginModal')">&times;</span>
+        <h2>Login</h2>
+        <form id="loginForm">
+            <label for="loginEmail">Email:</label>
+            <input type="email" id="loginEmail" required />
+            <label for="loginPassword">Password:</label>
+            <input type="password" id="loginPassword" required />
+            <button type="submit">Login</button>
+        </form>
+    </div>
+</div>
+
+<!-- Signup Modal -->
+<div id="signupModal" class="modal">
+    <div class="modal-content">
+        <span class="close-btn" onclick="closeModal('signupModal')">&times;</span>
+        <h2>Sign Up</h2>
+        <form id="signupForm">
+            <label for="signupEmail">Email:</label>
+            <input type="email" id="signupEmail" required />
+            <label for="signupPassword">Password:</label>
+            <input type="password" id="signupPassword" required />
+            <button type="submit">Sign Up</button>
+        </form>
+    </div>
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>

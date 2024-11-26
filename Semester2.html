@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semester 2</title>
+    <style>
+        /* General body styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Navbar Styling */
+        .Navbar {
+            height: 60px;
+            background-color: rgb(27, 13, 13); /* Dark background for navbar */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        .Nav_logo a {
+            color: rgb(189, 61, 189);
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .Nav_links a {
+            color: white;
+            margin-right: 1rem;
+            font-size: 1rem;
+            text-decoration: none;
+        }
+
+        .Nav_links a:hover {
+            text-decoration: underline;
+        }
+
+        /* Semester 2 Content */
+        #semester2 {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: rgb(189, 61, 189);
+        }
+
+        /* Subject boxes styling */
+        .subject {
+            background-color: rgb(247, 247, 247);
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            border: 2px solid rgb(189, 61, 189);
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-start;
+        }
+
+        .subject h2 {
+            color: rgb(189, 61, 189);
+            margin-left: 30px;
+        }
+
+        .subject p {
+            color: #555;
+            font-size: 16px;
+            flex: 1;
+        }
+
+        /* Image styling */
+        .subject img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-right: 30px;
+        }
+
+        /* Hidden content styling */
+        .content {
+            display: none;
+            padding: 10px;
+            margin-top: 10px;
+            background-color: rgb(239, 239, 239);
+            border-radius: 5px;
+        }
+
+        /* Button styling */
+        .subject button {
+            padding: 10px 15px;
+            background-color: rgb(189, 61, 189);
+            color: white;
+            border: 2px solid black; /* Black border */
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .subject button:hover {
+            background-color: rgb(157, 55, 157);
+        }
+
+        /* Link styling for "See Details" */
+        .subject a {
+            color: rgb(189, 61, 189);
+            text-decoration: none;
+        }
+
+        .subject a:hover {
+            text-decoration: underline;
+        }
+
+        /* Media Queries for responsiveness */
+        @media screen and (max-width: 768px) {
+            .subject {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .subject img {
+                width: 120px;
+                height: 120px;
+                margin-right: 0;
+                margin-bottom: 15px;
+            }
+
+            .subject h2 {
+                margin-left: 0;
+                text-align: center;
+            }
+
+            .subject p {
+                text-align: center;
+            }
+
+            #semester2 {
+                width: 95%;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .Nav_logo a {
+                font-size: 1rem;
+            }
+
+            .Nav_links a {
+                font-size: 0.8rem;
+            }
+
+            .subject img {
+                width: 100px;
+                height: 100px;
+            }
+
+            .subject h2 {
+                font-size: 1.2rem;
+            }
+
+            .subject p {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div class="Navbar">
+        <div class="Nav_logo">
+            <a href="#">Let's Learn</a>
+        </div>
+        <div class="Nav_links">
+            <a href="Index.html">Home</a>
+            <a href="#">Courses</a>
+            <a href="#">About Us</a>
+        </div>
+    </div>
+
+    <!-- Semester 2 Content -->
+    <div id="semester2">
+        <h1>Semester 2 - Core Subjects</h1>
+        
+        <!-- C++ -->
+        <div class="subject" id="cpp">
+            <img src="Images/C++.png" alt="C++ Programming">
+            <div>
+                <h2>Programming in C++</h2>
+                <p>This subject focuses on the concepts of object-oriented programming and C++ syntax, covering classes, inheritance, polymorphism, and more.</p>
+                <button onclick="showContent('cpp')">See Details</button>
+                <div id="cppContent" class="content">
+                    <h3>Syllabus:</h3>
+                    <ul>
+                        <li><a href="https://drive.google.com/file/d/1wmjCm2Voa4_E4SBrkXuWcCp5h5sfYO9z/view?usp=drive_link" target="_blank">Download Syllabus</a></li>
+                    </ul>
+                    <h3>Books:</h3>
+                    <ul>
+                        <li><a href="https://drive.google.com/file/d/1yJedIhB4bUoa9YjamJLeAnlJZaT5sWMG/view?usp=drive_link" target="_blank">Download Books</a></li>
+                    </ul>
+                    <h3>Past Year Questions:</h3>
+                    <ul>
+                        <li><a href="https://drive.google.com/file/d/1buP7MvJHehioPNQ0iFXOw8Zid-qLHxvs/view?usp=drive_link" target="_blank">Download Past Year Questions</a></li>
+                        <li><a href="https://drive.google.com/file/d/1IxdxfeM2RW-C8yUrfCUvauEohggOG1W0/view?usp=drive_link" target="_blank">Download Past Year Questions</a></li>
+                        <li><a href="https://drive.google.com/file/d/1OpFG6RCU7Q_M82hs0IL7eP0ZYHwIKZ0r/view?usp=drive_link" target="_blank">Download Past Year Questions</a></li>
+                    </ul>
+                    <!-- <h3>Presentations:</h3>
+                    <ul>
+                        <li><a href="Content/Cpp_Intro.pptx" target="_blank">Introduction to C++</a></li>
+                    </ul> -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Discrete Mathematics -->
+        <div class="subject" id="dm">
+            <img src="Images/Discrete.png" alt="Discrete Mathematics">
+            <div>
+                <h2>Discrete Mathematics</h2>
+                <p>This subject introduces logical reasoning, sets, relations, graph theory, and combinatorics essential for computer science.</p>
+                <button onclick="showContent('dm')">See Details</button>
+                <div id="dmContent" class="content">
+                    <h3>Syllabus:</h3>
+                    <ul>
+                        <li><a href="Content/DM_Syllabus.pdf" target="_blank">Download Syllabus</a></li>
+                    </ul>
+                    <h3>Books:</h3>
+                    <ul>
+                        <li><a href="Content/DM_Books.pdf" target="_blank">Download Books</a></li>
+                    </ul>
+                    <h3>Past Year Questions:</h3>
+                    <ul>
+                        <li><a href="https://drive.google.com/file/d/1G2j8MlBGkf1cf-_D4LvcLzo-_1jr2eq_/view?usp=drive_link target="_blank">Download Past Year Questions</a></li>
+                    </ul>
+                    <h3>Presentations:</h3>
+                    <ul>
+                        <li><a href="Content/DM_Theory.pptx" target="_blank">Discrete Math Theory</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mathematics for Probability -->
+        <div class="subject" id="probability">
+            <img src="Images/Probability.png" alt="Mathematics for Probability">
+            <div>
+                <h2>Probability For Computing</h2>
+                <p>This subject covers probability concepts, random variables, and distributions that are foundational in statistics and data science.</p>
+                <button onclick="showContent('probability')">See Details</button>
+                <div id="probabilityContent" class="content">
+                    <h3>Syllabus:</h3>
+                    <ul>
+                        <li><a href="Content/Probability_Syllabus.pdf" target="_blank">Download Syllabus</a></li>
+                    </ul>
+                    <h3>Books:</h3>
+                    <ul>
+                        <li><a href="Content/Probability_Books.pdf" target="_blank">Download Books</a></li>
+                    </ul>
+                    <h3>Past Year Questions:</h3>
+                    <ul>
+                        <li><a href="https://drive.google.com/file/d/1I2ebFPtlCQWK2PB6Rcq8bmjyzpqbs7aA/view?usp=drive_link" target="_blank">Download Past Year Questions</a></li>
+                    </ul>
+                    <h3>Presentations:</h3>
+                    <ul>
+                        <li><a href="Content/Probability_Lecture.pptx" target="_blank">Probability Concepts</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        function showContent(subjectId) {
+            const content = document.getElementById(subjectId + 'Content');
+            if (content.style.display === 'block') {
+                content.style.display = 'none';
+            } else {
+                content.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>
