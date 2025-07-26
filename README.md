@@ -2,6 +2,9 @@
 
 Let's Learn is a simple educational website designed to provide resources and information for various subjects across different semesters. It features a user-friendly interface and includes login and signup functionalities.
 
+#Live Link
+(`https://anjali-g1.github.io/Let-sLearn/`)
+
 ## Key Features
 - **Responsive Design**: Built with HTML, CSS, and JavaScript to ensure a responsive layout.
 - **User Authentication**: Includes login and signup modals for user authentication.
